@@ -1,3 +1,17 @@
+
+'''
+
+APM : 
+lotfan print() ro bartaye tamame function ha tamame command ha ezafe konid
+moafagh bashid
+
+
+
+
+'''
+
+
+
 import numpy as np
 
 class Sensor:
