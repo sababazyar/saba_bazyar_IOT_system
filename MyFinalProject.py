@@ -10,6 +10,9 @@ bale chashm
 ezafe kardam
 
 
+APM:
+besiar awli ahsant
+hala mesle create_devcie , create_sensor ham besazid dakhemele khode AminPanel
 
 '''
 
