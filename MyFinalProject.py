@@ -7,7 +7,6 @@ moafagh bashid
 
 
 bale chashm 
-dorosteshon kardam lotfan molaheze befarmaeed
 
 
 
