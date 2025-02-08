@@ -6,7 +6,8 @@ lotfan print() ro bartaye tamame function ha tamame command ha ezafe konid
 moafagh bashid
 
 
-bale chashm 
+bale chashm
+ezafe kardam
 
 
 
