@@ -3,8 +3,7 @@
 
 APM : 
 lotfan print() ro bartaye tamame function ha tamame command ha ezafe konid
-moafagh bashid
-
+moafagh bashid 
 
 bale chashm
 ezafe kardam
