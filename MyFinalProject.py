@@ -16,6 +16,7 @@ hala mesle create_devcie , create_sensor ham besazid dakhemele khode AminPanel
 
 chash hatman
 as tabe create_sensor ta tabe get_data_from_sensor_in_group ro neveshtam llotfa molaheze befarmaeed
+fekr konam hame tabe hayi ke farmode bodin ro ezafe kardam faghat task3 monde
 '''
 
 
