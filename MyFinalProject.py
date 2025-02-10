@@ -13,6 +13,9 @@ APM:
 besiar awli ahsant
 hala mesle create_devcie , create_sensor ham besazid dakhemele khode AminPanel
 
+
+chash hatman
+as tabe create_sensor ta tabe get_data_from_sensor_in_group ro neveshtam llotfa molaheze befarmaeed
 '''
 
 
@@ -153,8 +156,45 @@ class AdminPanel:
                       print(f'{device.name} in {group_name} is {device.get_status()}')
                       found = True
         if not found:
-            print(f'No devices of type {device_type} found')
+            print(f'no devices of type {device_type} found')
+    def create_sensor(self, group_name, sensor_name):
+        print(f'trying to create a sensor with name: {sensor_name} in group: {group_name}')
+        if group_name in self.groups:
+             topic = f'home/{group_name}/sensor/{sensor_name}'
+             print(f'creating sensor topic: {topic}')
+             new_sensor = Sensor(sensor_name)
+             self.groups[group_name].append(new_sensor)
+             print(f'sensor {new_sensor.name} is created in {group_name}')
+        else:
+             print('group doesnt exist')
+            
+    def add_sensor_in_group(self, group_name, sensor):
+        print(f'trying to add sensor: {sensor.name} to group: {group_name}')
+        if group_name in self.groups:
+            self.groups[group_name].append(sensor) 
+            print(f'sensor {sensor.name} added to group {group_name}')
+       else:
+           print('group doesnt exist')
 
+    def add_device_in_group(self, group_name, device):
+        print(f'trying to add device: {device.name} to group: {group_name}')
+        if group_name in self.groups:
+            self.groups[group_name].append(device)   
+            print(f'device {device.name} added to group {group_name}')
+       else:
+           print('group does not exist')
+          
+   def get_data_from_sensor_in_group(self, group_name):
+       print(f'trying to get data from sensors in group: {group_name}')
+       if group_name in self.groups:
+           sensors = [device for device in self.groups[group_name] if isinstance(device, Sensor)]
+           if sensors:
+               for sensor in sensors:
+                   data = sensor.read_sensor()
+                   print(f'data from {sensor.name} in {group_name}: {data}')
+           else:
+               print(f'no sensors found in group {group_name}')
+       else:
+           print('group doesnt exist')
 
-
-#def create_sensor...
+             
