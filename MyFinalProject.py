@@ -17,6 +17,13 @@ hala mesle create_devcie , create_sensor ham besazid dakhemele khode AminPanel
 chash hatman
 as tabe create_sensor ta tabe get_data_from_sensor_in_group ro neveshtam llotfa molaheze befarmaeed
 fekr konam hame tabe hayi ke farmode bodin ro ezafe kardam faghat task3 monde
+
+
+APM:
+salam
+tabeh haye  turn_on_all_in_group and  turn_off_all_in_group print nadare ke bayad print ezafe beshe
+besiar awli faghat tabeye akahretono mamnoon misham tozih bedid
+
 '''
 
 
