@@ -24,6 +24,16 @@ salam
 tabeh haye  turn_on_all_in_group and  turn_off_all_in_group print nadare ke bayad print ezafe beshe
 besiar awli faghat tabeye akahretono mamnoon misham tozih bedid
 
+
+salam, vaght bekheir
+chash, ezafe kardam
+bale hatman, in tebe gharar shod ke biad data haro az hame sensor hayi ke toye ye group moshakhasi hastan peyda kone o barresi kone.
+avalesh ke miad va vorody ke esm ye group hast ro migire bad ba if baresi mikone ke vojod dare ya na 
+agar vojod dasht tamam device hye mojodi ke as no sensor ha hastan ba isinstance peyda mikone
+yani yejorayi engar list device haye mojod toye ye group ro barresi mikone ta faghat sensor haro joda kone chon ma faghat donbal data haye sensor ha hastim
+badesh vaghti ke sensor haro peyda kard ye halghe roye har sensor ejra mishe va data ha khonde mishan va ba esm sensor va group khodeshon print mishan
+hala agar group kolan vojod nadashte bashe payam 'group dosnt exist' print mishe va agar faghat sensor haye on group peyda nashe payam 'no sensors found...' print mishe
+
 '''
 
 
@@ -119,19 +129,25 @@ class AdminPanel:
             return []
 
     def turn_on_all_in_group(self, group_name):
+        print(f' turning on all devices in group {group_name}')
         devices = self.get_devices_in_group(group_name)
-        for device in devices:
-            device.turn_on()
+        if devices:
+            for device in devices:
+                device.turn_on()
+                print(f'device {device.name} turned on')
         else:
-            print('no devices found in group')
+            print(f'no devices found in group {group_name}')
 
     def turn_off_all_in_group(self, group_name):
+        print(f'turning off all devices in group {group_name}')
         devices = self.get_devices_in_group(group_name)
         if devices:
             for device in devices:
                 device.turn_off()
+                print(f'device {device.name} turned off')
         else:
-            print('no devices found in the group')
+            print(f'no devices found in group {group_name}')
+
             
     def turn_on_all_devices(self):
        print('turning on all devices')
