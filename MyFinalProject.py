@@ -34,6 +34,11 @@ yani yejorayi engar list device haye mojod toye ye group ro barresi mikone ta fa
 badesh vaghti ke sensor haro peyda kard ye halghe roye har sensor ejra mishe va data ha khonde mishan va ba esm sensor va group khodeshon print mishan
 hala agar group kolan vojod nadashte bashe payam 'group dosnt exist' print mishe va agar faghat sensor haye on group peyda nashe payam 'no sensors found...' print mishe
 
+
+APM:
+besiar awli ahsant 
+shoam kamelan motvajeye mozoye class va object shodid
+
 '''
 
 
