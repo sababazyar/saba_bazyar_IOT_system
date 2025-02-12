@@ -29,7 +29,7 @@ salam, vaght bekheir
 chash, ezafe kardam
 bale hatman, in tebe gharar shod ke biad data haro az hame sensor hayi ke toye ye group moshakhasi hastan peyda kone o barresi kone.
 avalesh ke miad va vorody ke esm ye group hast ro migire bad ba if baresi mikone ke vojod dare ya na 
-agar vojod dasht tamam device hye mojodi ke as no sensor ha hastan ba isinstance peyda mikone
+agar vojod dasht tamam dastgah hye mojodi ke as no sensor ha hastan ba isinstance peyda mikone
 yani yejorayi engar list device haye mojod toye ye group ro barresi mikone ta faghat sensor haro joda kone chon ma faghat donbal data haye sensor ha hastim
 badesh vaghti ke sensor haro peyda kard ye halghe roye har sensor ejra mishe va data ha khonde mishan va ba esm sensor va group khodeshon print mishan
 hala agar group kolan vojod nadashte bashe payam 'group dosnt exist' print mishe va agar faghat sensor haye on group peyda nashe payam 'no sensors found...' print mishe
