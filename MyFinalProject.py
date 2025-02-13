@@ -43,6 +43,12 @@ kheyli mamnonam
 task 3 ro ham anjam dadam, do tabe hazf device va hazf sesor az ye group ro neveshtam.
 lotfan molaheze befarmaid ke agar iradi nadasht baraton toye telegram link ro ersal konam
 
+
+APM:
+salam arz shdo besiar awli
+fght ghabl az hazf bayad check kone esme sensor -- aya sensore ya na age sensor bod hazf kone ag devcie bod beeg device (error)
+hamchenin baraye device
+
 '''
 
 
