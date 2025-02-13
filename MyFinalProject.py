@@ -39,6 +39,10 @@ APM:
 besiar awli ahsant 
 shoam kamelan motvajeye mozoye class va object shodid
 
+kheyli mamnonam
+task 3 ro ham anjam dadam, do tabe hazf device va hazf sesor az ye group ro neveshtam.
+lotfan molaheze befarmaid ke agar iradi nadasht baraton toye telegram link ro ersal konam
+
 '''
 
 
@@ -226,4 +230,29 @@ class AdminPanel:
        else:
            print('group doesnt exist')
 
-#Task3..
+#---Task3---
+
+
+#1.tabe hazf ye sensor az ye group-------
+    def remove_sensor_from_group(groups, group_name, sensor_name):
+        print(f'trying to remove sensor {sensor_name} from {group_name} group')
+        if group_name in groups:
+            if sensor_name in groups[group_name]:
+                groups[group_name].remove(sensor_name)
+                print(f'sensor {sensor_name} removed from group {group_name}')
+            else:
+               print(f'sensor {sensor_name} is not found in group {group_name}')
+        else:
+           print('group doesnt exist')
+
+
+#2.tabe hazf yek dastgah (device)--------
+    def remove_device(devices, device_name):
+        print(f'trying to remove {device_name}')
+        if device_name in devices:
+            devices.remove(device_name)
+            print(f'device {device_name} is removed')
+    else:
+        print(f'device {device_name} is not found')
+
+
