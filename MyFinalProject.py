@@ -49,6 +49,9 @@ salam arz shdo besiar awli
 fght ghabl az hazf bayad check kone esme sensor -- aya sensore ya na age sensor bod hazf kone ag devcie bod beeg device (error)
 hamchenin baraye device
 
+
+bale chashm keyli mamnonam az tozihateton 
+eslaheshon kardam 
 '''
 
 
@@ -258,10 +261,13 @@ class AdminPanel:
 #2.tabe hazf yek dastgah (device)--------
     def remove_device(devices, device_name):
         print(f'trying to remove {device_name}')
-        if device_name in devices:
-            devices.remove(device_name)
-            print(f'device {device_name} is removed')
-    else:
-        print(f'device {device_name} is not found')
+        if isinstance (device,Device):
+            if device_name in devices:
+                devices.remove(device_name)
+                print(f'device {device_name} is removed')
+           else:
+               print(f'device {device_name} is not found')
+       else:
+           print(f'{device_name} is not a device instance')
 
 
