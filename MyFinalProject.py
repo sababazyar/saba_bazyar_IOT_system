@@ -243,11 +243,14 @@ class AdminPanel:
     def remove_sensor_from_group(groups, group_name, sensor_name):
         print(f'trying to remove sensor {sensor_name} from {group_name} group')
         if group_name in groups:
-            if sensor_name in groups[group_name]:
-                groups[group_name].remove(sensor_name)
-                print(f'sensor {sensor_name} removed from group {group_name}')
+            if isinstance (sensor,sensor):
+                if sensor_name in groups[group_name]:
+                    groups[group_name].remove(sensor_name)
+                    print(f'sensor {sensor_name} removed from group {group_name}')
+                else:
+                    print(f'sensor {sensor_name} is not found in group {group_name}')
             else:
-               print(f'sensor {sensor_name} is not found in group {group_name}')
+                print(f'{sensor_name} is not a sensor instance')
         else:
            print('group doesnt exist')
 
