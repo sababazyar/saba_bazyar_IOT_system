@@ -66,7 +66,7 @@ class Sensor:
         self.current_value = None
         print(f'Sensor {self.name} is ready in group {self.group} with unit {self.unit} on pin {self.pin}')
 
- def read_sensor(self):
+    def read_sensor(self):
         self.current_value = np.random.uniform(20, 25)
         print(f'sensor {self.name} read value: {self.current_value} {self.unit}')
         return self.current_value
