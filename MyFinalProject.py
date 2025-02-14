@@ -267,7 +267,7 @@ class AdminPanel:
                 print(f'device {device_name} is removed')
            else:
                print(f'device {device_name} is not found')
-       else:
-           print(f'{device_name} is not a device instance')
+        else:
+            print(f'{device_name} is not a device instance')
 
 
